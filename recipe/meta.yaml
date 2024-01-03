@@ -25,9 +25,9 @@ requirements:
 
 test:
   requires:
+    - numpy
     - pip
     - pytest
-    - numpy
   commands:
     - python -c 'import dlpack; print(dlpack.__version__)'
     - pytest -sv -r s --pyargs dlpack
